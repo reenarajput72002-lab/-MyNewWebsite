@@ -134,6 +134,35 @@ margin-top:20px;
 
 </style>
 
+ <script>
+
+  //popup function 
+  function showMsg(){
+   alert(Welcome Reena");
+  }
+
+  //Show Home
+  function showHome(){
+   document.getElementById("home").style.display="block";
+   document.getElementBy Id("About").style.display="none";
+   document.getElementBy Id("contact").style.display="none";
+  }
+
+ //Show About
+  function showAbout(){
+   document.getElementById("home").style.display="none";
+   document.getElementById("about").style.display="block";
+   document.getElementBy Id("contact").style.display="none";
+  }
+
+  
+    //Show Contact
+  function showContact(){
+   document.getElementById("home").style.display="none";
+   document.getElementBy Id("About").style.display="none";
+   document.getElementBy Id("contact").style.display="block";
+  }
+ </script>
 </head>
 
 <body>
@@ -144,11 +173,11 @@ margin-top:20px;
 </header>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+<a onclick="showHome()">Home</a>
+<a onclick="showAbout()">About</a>
+<a onclick="showContact()">Contact</a>
 </nav>
-
+<hr>
 <section>
 
 <h2>About me</h2>
